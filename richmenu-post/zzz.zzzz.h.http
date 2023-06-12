@@ -1,0 +1,74 @@
+### OK List GOOD (Officeal Example)
+GET https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records?sort=id,-1&pageSize=5&page=1
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+
+###
+
+### OK Filter GOOD
+### %3D%5Beq%5DABC -- =[eq]ABC
+GET https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records?filter=Field%3D%5Beq%5DABC
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+
+###
+
+### OK Filter GOOD
+### %3D%5Bcontains%5DName -- =[contains]Name
+GET https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records?filter=Field%3D%5Bcontains%5DName
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+
+### OK GET by ID --- GOOD
+GET https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records/619769c0bbd56ea47cbacc5b
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+
+### OK POST GOOD --- Simple
+POST https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+
+{
+  "values": {
+    "Field": "DEF",
+    "描述": "<p>DEF Desc</p>"
+  }
+}
+###
+
+### OK GOOD -- PATCH OK Simple
+PATCH https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records/619769c0bbd56ea47cbacc5b
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+
+{
+  "values": {
+    "Field": "Name 222222",
+    "描述": "Desc 222222"
+  }
+}
+
+###
+PATCH https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records/6198ab35bd6bad775c5a9744
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+
+{
+  "values": {
+    "Field": "Name 222222",
+    "Desc": "Desc 222222"
+  }
+}
+
+###
+
+DELETE https://api.hipacloud.com/v1/apps/619757758091975bd4eb2557/tables/619757758091975bd4eb2558/records/619769c0bbd56ea47cbacc5b
+Content-Type: application/json
+Authorization: Bearer {{api-key}}
+###
+
+###
+###
+@api-key = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2MTk3NTc1ZDU0MzIxYzQ5NjhjNjQzNGQiLCJpYXQiOjE2MzczMDgyNTN9.LJNePTrd4Ifl6Csz2RKwJEQ1b7fQAVmHEe-VcWf_p8w
+###

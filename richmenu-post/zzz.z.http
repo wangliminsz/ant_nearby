@@ -1,0 +1,402 @@
+
+
+### 成功，第二步，上传图片
+# 2022-1-20---------------------------------------------------------------
+###
+POST https://api-data.line.me/v2/bot/richmenu/richmenu-d5da634dd2f7504e06b139122752c41f/content
+Content-Type: image/png
+Authorization: Bearer {{apikey_2023_ant_nearby }}
+
+# < ./richmenu-0000.png
+< ./richmenu-2022-02-27.jpg
+###
+###------WebKitFormBoundary7MA4YWxkTrZu0gW--
+### 成功，第三步，将 richmenu 设为当前的
+# 2022-1-20---------------------------------------------------------------
+POST https://api.line.me/v2/bot/user/all/richmenu/richmenu-d5da634dd2f7504e06b139122752c41f
+Authorization: Bearer {{apikey_2023_ant_nearby }}
+
+### 2022--1-27 Bkk
+# https://liff.line.me/1645278921-kWRPP32q/?accountId=054alhst"
+# เดซ Daisy\n\nAnt Global Property\n\nBkk Real Estate - Buy / Sale / Rent\n\nLine: 0909820001
+### 2022--1-27 Bkk
+
+### 第一步 BKK ver 2022-01-27
+POST https://api.line.me/v2/bot/richmenu
+Content-Type: application/json
+Authorization: Bearer {{apikey_2023_ant_nearby }}
+
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "Rich Menu 1",
+  "chatBarText": "Ant Nearby",
+  "areas": [
+    {
+      "bounds": {
+        "x": 67,
+        "y": 57,
+        "width": 730,
+        "height": 745
+      },
+      "action": {
+        "type": "message",
+        "text": "Let's explore..."
+      }
+    },
+    {
+      "bounds": {
+        "x": 878,
+        "y": 48,
+        "width": 739,
+        "height": 749
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=668slmav"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1694,
+        "y": 52,
+        "width": 744,
+        "height": 750
+      },
+
+       "action": {
+        "type": "postback",
+        "text": "About Ant Nearby",
+        "data": "mcontact&"
+      }
+    }
+  ]
+}
+
+###
+
+ ###     "action": {
+ ###       "type": "message",
+ ###       "text": "เดซ Daisy\n\nAnt Global Property\n\nBkk Real Estate - Buy / Sale / Rent\n\nLine: 0909820001"
+ ###     }
+
+### 第一步 Bkk ver 2022-01-22
+POST https://api.line.me/v2/bot/richmenu
+Content-Type: application/json
+Authorization: Bearer {{apikey00}}
+
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "Rich Menu 1",
+  "chatBarText": "MICHELIN Bkk",
+  "areas": [
+    {
+      "bounds": {
+        "x": 67,
+        "y": 57,
+        "width": 730,
+        "height": 745
+      },
+      "action": {
+        "type": "message",
+        "text": "Start to find Nearby MICHELIN (Bkk 2022) ..."
+      }
+    },
+    {
+      "bounds": {
+        "x": 878,
+        "y": 48,
+        "width": 739,
+        "height": 749
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=054alhst"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1694,
+        "y": 52,
+        "width": 744,
+        "height": 750
+      },
+      "action": {
+        "type": "message",
+        "text": "MICHELIN Bkk 2022 info\n\n--------------------\n\nเดซ Daisy\nAnt Global Property\n\nBkk Real Estate - Buy / Sale / Rent\n\nLine: 0909820001"
+      }
+    }
+  ]
+}
+
+### 第一步 ver 2022-01-20
+POST https://api.line.me/v2/bot/richmenu
+Content-Type: application/json
+Authorization: Bearer {{apikey}}
+
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "Rich Menu 1",
+  "chatBarText": "Find Michelin",
+  "areas": [
+    {
+      "bounds": {
+        "x": 48,
+        "y": 48,
+        "width": 763,
+        "height": 758
+      },
+      "action": {
+        "type": "message",
+        "text": "Please send your location ..."
+      }
+    },
+    {
+      "bounds": {
+        "x": 878,
+        "y": 38,
+        "width": 744,
+        "height": 764
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=054alhst"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1694,
+        "y": 43,
+        "width": 744,
+        "height": 749
+      },
+      "action": {
+        "type": "message",
+        "text": "เดซ Daisy\n\nAnt Global Property\n\nBkk Real Estate - Buy / Sale / Rent\n\nLine: 0909820001"
+      }
+    }
+  ]
+}
+
+###
+
+###
+
+###
+
+
+POST https://api.line.me/v2/bot/richmenu
+Content-Type: application/json
+Authorization: Bearer {{apikey}}
+
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "Rich Menu 1",
+  "chatBarText": "Find Michelin",
+  "areas": [
+    {
+      "bounds": {
+        "x": 48,
+        "y": 48,
+        "width": 763,
+        "height": 758
+      },
+      "action": {
+        "type": "postback",
+        "label": "Label---Location",
+        "text": "Send your location",
+        "data": "action=buy&itemid=111"
+      }
+    },
+    {
+      "bounds": {
+        "x": 878,
+        "y": 38,
+        "width": 744,
+        "height": 764
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=054alhst"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1694,
+        "y": 43,
+        "width": 744,
+        "height": 749
+      },
+      "action": {
+        "type": "message",
+        "text": "Daisy Chen\n\nAnt Global Property\n\nBkk Real Estate Buy / Sale / Rent\n\nLine: 0909820001"
+      }
+    }
+  ]
+}
+###
+
+### 成功，第一步，上传 Richmenu
+# 2022-1-20---------------------------------------------------------------
+POST https://api.line.me/v2/bot/richmenu
+Content-Type: application/json
+Authorization: Bearer {{apikey}}
+
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "Rich Menu 1",
+  "chatBarText": "Bulletin",
+  "areas": [
+    {
+      "bounds": {
+        "x": 48,
+        "y": 48,
+        "width": 763,
+        "height": 758
+      },
+      "action": {
+        "type": "message",
+        "text": "1"
+      }
+    },
+    {
+      "bounds": {
+        "x": 878,
+        "y": 38,
+        "width": 744,
+        "height": 764
+      },
+      "action": {
+        "type": "message",
+        "text": "2"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1694,
+        "y": 43,
+        "width": 744,
+        "height": 749
+      },
+      "action": {
+        "type": "message",
+        "text": "3"
+      }
+    }
+  ]
+}
+
+###
+# 2022-1-20---------------------------------------------------------------
+###
+###
+
+GET https://api.airtable.com/v0/app3rlBTN22QLnLuN/Lab
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+
+###
+
+PATCH https://api.airtable.com/v0/app3rlBTN22QLnLuN/Lab
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+
+{
+    "records":
+        [
+            { "id": "recNqTAsNeZvoQeYl",
+            "fields": { "Approval": true }
+            }
+        ]
+}
+
+
+### GOOD SUCCESS
+
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+###
+
+GET https://api.airtable.com/v0/appFWA9I2wmmWDVLh/Design%20projects?fields%5B%5D=Name&filterByFormula=LEN(%7BProject+team%7D)%3C%3D0
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+
+###
+# const apiToken = "keyiMrVM9ZqRHM27I"; // use your own key!
+# const airTableApp = "app3rlBTN22QLnLuN";
+# const airTableName = "Clients";
+###
+
+GET https://api.airtable.com/v0/app3rlBTN22QLnLuN/Clients?fields%5B%5D=Name
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+
+# &filterByFormula=LEN(%7BProject+team%7D)%3C%3D0
+###
+
+https://api.airtable.com/v0/app3rlBTN22QLnLuN/Clients?fields%5B%5D=Name&filterByFormula=Mobile%3D13510160609
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+
+###
+
+GET https://api.airtable.com/v0/app3rlBTN22QLnLuN/Clients?filterByFormula=Mobile%3D13510160609
+Content-Type: application/json
+Authorization: Bearer {{apikey}}
+
+###
+@apikey =aqekULWhc+iZEpitXvPGBKvmGm99S64/JmptZPVX+s/aRuNN1z2dhorYaFgh0NIFlZQsTKSA+WId1df14vKR55kmEH0BcNPCyv7Kijox4G47MDH1ufxHPQlm0UrNcqWkm4fOVmaa/IAdAS66KTGeHgdB04t89/1O/w1cDnyilFU=
+###
+{{}}
+###
+###
+# OK OK GOOD 1
+GET https://api.airtable.com/v0/app3rlBTN22QLnLuN/Clients?filterByFormula=Login%3D'admin'
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+
+###
+
+###
+# OK OK GOOD 2
+GET https://api.airtable.com/v0/app3rlBTN22QLnLuN/Clients?fields%5B%5D=Name&filterByFormula=Login%3D'admin'
+Content-Type: application/json
+Authorization: Bearer keyiMrVM9ZqRHM27I
+
+###
+
+
+
+###
+### 2022-01-27 - BKK
+@apikey00 =aqekULWhc+iZEpitXvPGBKvmGm99S64/JmptZPVX+s/aRuNN1z2dhorYaFgh0NIFlZQsTKSA+WId1df14vKR55kmEH0BcNPCyv7Kijox4G47MDH1ufxHPQlm0UrNcqWkm4fOVmaa/IAdAS66KTGeHgdB04t89/1O/w1cDnyilFU=
+###
+### 2022-01-27 - CM
+@apikey01 = 42bWU8Oyoih1zd8PdOdMVEFg8/+c8XLZ1leC79THDpl+3dab0p26dVW25NXOJ5pqcPdpRCEXVITrMiykMBliTnthP9hJ/g59G3cbj1fXXaMnA3Yp7vvcO2qeHDb4+z3SVXmjIqhbJjMq6GkDUa+AkQdB04t89/1O/w1cDnyilFU=
+
+###
+@apikey_nearby = ExrSWEnJ75C5vh8u8+jtkef05kq5SFJX+f7PZONZns2MRRWzAWiW1/PWRvwaBS5ogBdxTqEygTIMKGnx6iD+pqUZU1GPmm/ewAuPck+H+QSv7iUAFb0lMZsEhro4W9faib0OJlnOcrGfE4Dup23VsAdB04t89/1O/w1cDnyilFU=
+###
+
+@apikey_2023_ant_nearby = HxyBq65FsGSof0/G8f9JDgJgP7tF8yNfnApwO6Zc+jcnpneUmhcyOfI6xP0nl7wzCmk0QhstVEbJCNA2wQSlf+/8C9E6exXlWPcZGtjIlkwZBFC9ojlXouC7h3XtrGR35JZGKni30GvqftgUCUtX+AdB04t89/1O/w1cDnyilFU=
+
+###
