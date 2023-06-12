@@ -11,13 +11,7 @@ from linebot.exceptions import InvalidSignatureError, LineBotApiError
 from linebot.models import *
 # =======================
 
-def flex_Locs(myLocList, myLocNum, lineUserId):
-
-    # print(myLocList)
-    # print('flex_Locs -----------------------------------')
-
-    # print(lineUserId)
-    # print('Line User Id -----------------------------------')
+def flex_Locs(myLocList, myLocNum, lineUserId, dtIdx):
 
     if myLocNum >= 12:
         bubbleNum = 12
@@ -28,10 +22,10 @@ def flex_Locs(myLocList, myLocNum, lineUserId):
 
     thisUser = mbkkdetail.objects.filter(dtuserid = lineUserId)
 
-    if thisUser.exists():
-        mbkkdetail.objects.filter(dtuserid=lineUserId).delete()
+    # if thisUser.exists():
+    #     mbkkdetail.objects.filter(dtuserid=lineUserId).delete()
 
-    dtIndex = 0
+    dtIndex = (dtIdx-1) * 12
 
     for myLocitem in myLocList[:bubbleNum]:
 

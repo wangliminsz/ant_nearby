@@ -456,7 +456,7 @@ def callback(request):
                     dbRadius = 3000
                     dbKeyword = "helloAnt"
                     dbKeyword1 = "Shopping Mall | Mall | Shopping | Cinema"
-                    dbKeyword2 = "Restaurant | Hotel | Food | Michelin"
+                    dbKeyword2 = "Restaurant | Buffet | Steak | Hotpot | Michelin"
                     dbKeyword3 = "School | University | College | Student"
                     dbKeyword4 = "Park | Leisure | Resort | Club | Massage"
                     dbKeyword5 = "BTS | MRT | Subway | Hospital | Clinic"
@@ -469,7 +469,10 @@ def callback(request):
 
                     # -----------------
 
-                    userInfo = mbkkaround.objects.filter(mbuserid = thisUser).last()
+                    # userInfo = mbkkaround.objects.filter(mbuserid = thisUser).last()
+
+                    if thisUserId.exists():
+                        mbkkdetail.objects.filter(dtuserid=thisUserId).delete()
 
                     # -----------------
 
@@ -480,11 +483,12 @@ def callback(request):
                     # message1 = TextSendMessage(text=ltext)
 
                     if (myLocs_Num1 > 0):
-                        message1= flex_Locs(myLocs1, myLocs_Num1, thisUser)
+                        dtIdx = 1
+                        message1= flex_Locs(myLocs1, myLocs_Num1, thisUser, dtIdx)
                     else:
                         print(myLocs_Num1)
                         print('why no found --------------------------')
-                        message1 = TextSendMessage(text="COMM Not Found")
+                        message1 = TextSendMessage(text="Shopping Mall Not Found")
 
                     # message3 = flex_Contact()
 
@@ -493,44 +497,48 @@ def callback(request):
                     (myLocs2, myLocs_Num2) = locationData_Ant(thisUser, my_list[1], my_list[2], dbKeyword2, dbRadius)
 
                     if (myLocs_Num2 > 0):
-                        message2= flex_Locs(myLocs2, myLocs_Num2, thisUser)
+                        dtIdx = 2
+                        message2= flex_Locs(myLocs2, myLocs_Num2, thisUser, dtIdx)
                     else:
                         print(myLocs_Num2)
                         print('why no found --------------------------')
-                        message2 = TextSendMessage(text="GOV Not Found")
+                        message2 = TextSendMessage(text="Restaurant Not Found")
 
                     ##################################################
 
                     (myLocs3, myLocs_Num3) = locationData_Ant(thisUser, my_list[1], my_list[2], dbKeyword3, dbRadius)
 
                     if (myLocs_Num3 > 0):
-                        message3= flex_Locs(myLocs3, myLocs_Num3, thisUser)
+                        dtIdx = 3
+                        message3= flex_Locs(myLocs3, myLocs_Num3, thisUser, dtIdx)
                     else:
                         print(myLocs_Num3)
                         print('why no found --------------------------')
-                        message3 = TextSendMessage(text="GOV Not Found")
+                        message3 = TextSendMessage(text="School Not Found")
 
                     ##################################################
 
                     (myLocs4, myLocs_Num4) = locationData_Ant(thisUser, my_list[1], my_list[2], dbKeyword4, dbRadius)
 
                     if (myLocs_Num4 > 0):
-                        message4= flex_Locs(myLocs4, myLocs_Num4, thisUser)
+                        dtIdx = 4
+                        message4= flex_Locs(myLocs4, myLocs_Num4, thisUser, dtIdx)
                     else:
                         print(myLocs_Num4)
                         print('why no found --------------------------')
-                        message4 = TextSendMessage(text="GOV Not Found")
+                        message4 = TextSendMessage(text="Club Not Found")
 
                     ##################################################
 
                     (myLocs5, myLocs_Num5) = locationData_Ant(thisUser, my_list[1], my_list[2], dbKeyword5, dbRadius)
 
                     if (myLocs_Num5 > 0):
-                        message5= flex_Locs(myLocs5, myLocs_Num5, thisUser)
+                        dtIdx = 5
+                        message5= flex_Locs(myLocs5, myLocs_Num5, thisUser, dtIdx)
                     else:
                         print(myLocs_Num5)
                         print('why no found --------------------------')
-                        message5 = TextSendMessage(text="GOV Not Found")
+                        message5 = TextSendMessage(text="Comm or Hospital Not Found")
 
                     ##################################################
 
