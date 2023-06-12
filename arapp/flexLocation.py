@@ -101,7 +101,8 @@ def flex_Locs(myLocList, myLocNum, lineUserId, dtIdx):
     contents['type'] = 'carousel'
     bubbles = []
 
-    myIndex = 0
+    # myIndex = 0
+    myIndex = (dtIdx-1) * 12
 
     for myLocitem in myLocList[:bubbleNum]:
 

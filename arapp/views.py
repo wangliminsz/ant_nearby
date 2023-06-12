@@ -96,7 +96,7 @@ def callback(request):
 
                     theUser = event.source.user_id
 
-                    (myLocs, myLocs_Num) = locationData(theUser, event.message.latitude, event.message.longitude)
+                    (myLocs, myLocs_Num) = locationData_Ant(theUser, event.message.latitude, event.message.longitude)
                     # locationData(theUser, event.message.latitude, event.message.longitude)
 
                     #print('locations --------------------------------')
@@ -134,17 +134,17 @@ def callback(request):
 
                     theUserId = event.source.user_id
                     theDetailIndex = int(event.postback.data[9:])
-                    print(theDetailIndex)
+                    print('detail index ------------>', theDetailIndex)
                     print("detail ------------------")
 
                     theDetail = mbkkdetail.objects.filter(dtuserid=theUserId).filter(dtlocid=theDetailIndex).last()
 
-                    print(theDetail.dtlocname)
-                    print(theDetail.dtloclat)
-                    print(theDetail.dtloclng)
-                    print(theDetail.dtlocrating)
-                    print(theDetail.dtlocphotourl)
-                    print("detail ------------------")
+                    # print(theDetail.dtlocname)
+                    # print(theDetail.dtloclat)
+                    # print(theDetail.dtloclng)
+                    # print(theDetail.dtlocrating)
+                    # print(theDetail.dtlocphotourl)
+                    # print("detail ------------------")
 
                     # message1 = TextSendMessage(text='More info...')
                     # message2 = theLocation(event.postback.data)
@@ -471,8 +471,9 @@ def callback(request):
 
                     # userInfo = mbkkaround.objects.filter(mbuserid = thisUser).last()
 
-                    if thisUserId.exists():
-                        mbkkdetail.objects.filter(dtuserid=thisUserId).delete()
+                    thisUserDetailId = mbkkdetail.objects.filter(dtuserid = thisUser)
+                    if thisUserDetailId.exists():
+                        mbkkdetail.objects.filter(dtuserid=thisUser).delete()
 
                     # -----------------
 
