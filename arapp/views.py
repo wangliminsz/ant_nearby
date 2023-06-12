@@ -471,9 +471,9 @@ def callback(request):
 
                     # userInfo = mbkkaround.objects.filter(mbuserid = thisUser).last()
 
-                    thisUserDetailId = mbkkdetail.objects.filter(dtuserid = thisUser)
-                    if thisUserDetailId.exists():
-                        mbkkdetail.objects.filter(dtuserid=thisUser).delete()
+                    # thisUserDetailId = mbkkdetail.objects.filter(dtuserid = thisUser)
+                    # if thisUserDetailId.exists():
+                    mbkkdetail.objects.filter(dtuserid=thisUser).delete()
 
                     # -----------------
 
