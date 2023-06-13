@@ -457,9 +457,9 @@ def callback(request):
                     dbKeyword = "helloAnt"
                     dbKeyword1 = "Shopping Mall | Mall | Shopping | Cinema"
                     dbKeyword2 = "Restaurant | Buffet | Steak | Hotpot | Michelin"
-                    dbKeyword3 = "School | University | College | Student"
-                    dbKeyword4 = "Park | Leisure | Resort | Club | Massage"
-                    dbKeyword5 = "BTS | MRT | Subway | Hospital | Clinic"
+                    dbKeyword3 = "School | University | College | Kindgarden"
+                    dbKeyword4 = "Park | Leisure | Resort | Club | Hotel"
+                    dbKeyword5 = "BTS | MRT | Hospital | Clinic | Government"
 
                     thisUserId = mbkkaround.objects.filter(mbuserid = thisUser)
                     if thisUserId.exists():
